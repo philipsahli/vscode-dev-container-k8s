@@ -1,0 +1,24 @@
+{
+	"name": "Debian",
+	"runArgs": [
+		"--init"
+	],
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "bullseye"
+		}
+	},
+	"settings": {},
+	"extensions": [],
+	"remoteUser": "vscode",
+	"features": {
+		"docker-in-docker": "latest",
+		"kubectl-helm-minikube": {
+			"version": "latest",
+			"helm": "latest"
+		},
+		"terraform": "1.0",
+		"golang": "1.17"
+	}
+}
